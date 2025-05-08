@@ -1,0 +1,210 @@
+/* Página de Serviços */
+.pagina-servicos {
+    padding: 40px 0;
+}
+
+
+/* Destaque Serviço */
+.destaque-servico {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.destaque-servico .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.destaque-conteudo {
+    flex: 1;
+}
+
+.destaque-imagem {
+    flex: 1;
+    position: relative;
+}
+
+.destaque-imagem img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.selo-destaque {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    transform: rotate(10deg);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.lista-beneficios {
+    margin: 25px 0;
+    list-style-type: none;
+}
+
+.lista-beneficios li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.lista-beneficios li::before {
+    content: "✓";
+    color: var(--cor-secundaria);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.destaque-info {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.info-item {
+    text-align: center;
+}
+
+.destaque-numero {
+    display: block;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--cor-secundaria);
+}
+
+.destaque-label {
+    font-size: 0.9em;
+}
+
+/* Todos Serviços */
+.todos-servicos {
+    padding: 60px 0;
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.cartao-servico {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.cartao-servico:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.cartao-servico h3 {
+    color: var(--cor-primaria);
+    margin: 20px 0 15px;
+}
+
+.servico-icone {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 25, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.servico-icone img {
+    width: 50px;
+    height: 50px;
+}
+
+.servico-detalhes {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.servico-detalhes li {
+    margin-bottom: 8px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.servico-detalhes li::before {
+    content: "•";
+    color: var(--cor-secundaria);
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+}
+
+/* Tabela de Preços */
+.tabela-precos {
+    margin-top: 60px;
+    overflow-x: auto;
+}
+
+.tabela-precos h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--cor-primaria);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--cor-primaria);
+    color: white;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+tfoot td {
+    font-size: 0.8em;
+    text-align: center;
+    color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .destaque-servico .container {
+        flex-direction: column;
+    }
+    
+    .destaque-imagem {
+        margin-top: 30px;
+    }
+    
+    .servicos-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    table {
+        font-size: 0.9em;
+    }
+}
