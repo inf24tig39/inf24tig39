@@ -375,7 +375,6 @@ nav ul li.atual a {
   text-align: center;
   color: var(--cor-primaria);
   margin-bottom: 30px;
-
 }
 
 table {
@@ -745,6 +744,14 @@ footer {
   #contactos {
     padding: 60px 0;
   }
+
+  .banner-equipa h1 {
+    font-size: 2.5rem;
+  }
+
+  #equipa {
+    padding: 60px 0;
+  }
 }
 
 @media (max-width: 576px) {
@@ -800,6 +807,18 @@ footer {
 
   #mapa h3 {
     font-size: 1.8rem;
+  }
+
+  .banner-equipa {
+    padding: 80px 0;
+  }
+
+  .banner-equipa h1 {
+    font-size: 2rem;
+  }
+
+  #equipa .section-header h2 {
+    font-size: 2rem;
   }
 }
 /* ===== BANNER CONTACTOS ===== */
@@ -951,6 +970,135 @@ footer {
   height: 4px;
   background-color: var(--cor-destaque);
   border-radius: 2px;
+}
+
+/* ===== BANNER EQUIPA ===== */
+.banner-equipa {
+  background: linear-gradient(rgba(44, 90, 160, 0.85), rgba(44, 90, 160, 0.85)),
+    url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+  color: var(--cor-branco);
+  text-align: center;
+  padding: 100px 0;
+  position: relative;
+}
+
+.banner-equipa h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== SECÇÃO EQUIPA ===== */
+#equipa {
+  padding: 80px 0;
+  background-color: var(--cor-fundo);
+}
+
+#equipa .section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#equipa .section-header h2 {
+  font-size: 2.5rem;
+  color: var(--cor-primaria);
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+#equipa .section-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 4px;
+  background-color: var(--cor-destaque);
+  border-radius: 2px;
+}
+
+#equipa .section-header p {
+  max-width: 700px;
+  margin: 20px auto 0;
+  color: #666;
+}
+
+.equipa-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.membro-equipa {
+  background: var(--cor-branco);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-top: 4px solid var(--cor-primaria);
+  cursor: pointer;
+}
+
+.membro-equipa:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  border-top-color: var(--cor-destaque);
+}
+
+.membro-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 20px;
+  border: 3px solid var(--cor-primaria);
+  transition: all 0.3s ease;
+}
+
+.membro-equipa:hover .membro-img {
+  border-color: var(--cor-destaque);
+  transform: scale(1.05);
+}
+
+.membro-equipa h3 {
+  color: var(--cor-primaria);
+  margin-bottom: 10px;
+}
+
+.membro-equipa .cargo {
+  color: var(--cor-destaque);
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.membro-equipa .detalhes-equipa {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  text-align: left;
+}
+
+.membro-equipa .detalhes-equipa.ativo {
+  max-height: 500px; /* Altura suficiente para o conteúdo */
+}
+
+.membro-equipa .detalhes-equipa p {
+  margin-bottom: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.membro-equipa .detalhes-equipa audio {
+  width: 100%;
+  margin-top: 15px;
 }
 
 /* ===== ANIMAÇÕES ===== */

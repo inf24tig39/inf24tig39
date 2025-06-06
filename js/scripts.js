@@ -113,3 +113,25 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('nav ul li:nth-child(4)').classList.add('atual');
   }
 });
+// Função para mostrar/esconder detalhes da equipa
+function toggleDetalhes(element) {
+  const detalhes = element.querySelector('.detalhes-equipa');
+  detalhes.classList.toggle('ativo');
+
+  // Fecha os detalhes de outros membros
+  document.querySelectorAll('.membro-equipa').forEach((membro) => {
+    if (
+      membro !== element &&
+      membro.querySelector('.detalhes-equipa').classList.contains('ativo')
+    ) {
+      membro.querySelector('.detalhes-equipa').classList.remove('ativo');
+    }
+  });
+}
+
+// Adiciona o evento de clique a cada membro
+document.querySelectorAll('.membro-equipa').forEach((membro) => {
+  membro.addEventListener('click', function () {
+    toggleDetalhes(this);
+  });
+});
