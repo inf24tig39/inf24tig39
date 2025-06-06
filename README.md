@@ -1,35 +1,51 @@
 # inf24tig39
 
-Repository to host the project developed for 'Tecnologias Internet', a first year subject at Universidade da Maia. Developed by Group inf24tig39 : [@CésarRamos](https://github.com/devCesarRamos), [@GonçaloCidras](https://github.com/devCidras).
+Repositório para alojar o projeto desenvolvido para 'Tecnologias Internet', uma unidade curricular do primeiro ano da Universidade da Maia. Desenvolvido pelo Grupo inf24tig39: [@CésarRamos](https://github.com/devCesarRamos), [@GonçaloCidras](https://github.com/devCidras).
 
-## Short theme description
+## Descrição do tema
 
-An example report using markdown on Github. This documentation is writen using [Markdown](https://www.markdownguide.org/). Here is a [link to the basic syntax](https://www.markdownguide.org/basic-syntax), but an [extended syntax](https://www.markdownguide.org/extended-syntax/) is also available. If you're starting with Markdown, you may want to try a [Markdown Tutorial](https://www.markdowntutorial.com/) and read the [getting started](https://www.markdownguide.org/getting-started/) section.
+O projeto consiste num website completo para o **Estudo360**, um centro de explicações que oferece serviços educacionais desde o 1º ano até ao ensino secundário. O site inclui:
 
-## Repository organization
+- Página inicial com apresentação do centro
+- Página de serviços com detalhes das ofertas educacionais
+- Página da equipa com perfil dos professores
+- Página de contactos com formulário e mapa
+- Sistema dinâmico de carregamento de dados via XML/JavaScript
 
-_Please help reader navigate around describing how the repository is organized by providing links_
+## Organização do repositório
 
-- **Source code** is in the [src folder](src/).
-- Report chapters are in [doc folder](doc/).
+- **Código fonte**:
+  - [index.html](index.html) - Página inicial
+  - [servicos.html](servicos.html) - Página de serviços
+  - [equipa.html](equipa.html) - Página da equipa
+  - [contactos.html](contactos.html) - Página de contactos
+  - [css/style.css](css/style.css) - Estilos principais
+  - [js/scripts.js](js/scripts.js) - Funcionalidades JavaScript
+  - [servicos.xml](xml/servicos.xml) - Dados dos serviços
+  - [servicos.xsd](xml/servicos.xsd) - Schema XML para validação
+- **Documentação**: [doc/](doc/)
+  - [c1.md](doc/c1.md) - Apresentação do projeto
+  - [c2.md](doc/c2.md) - Interface do utilizador
+  - [c3.md](doc/c3.md) - Produto final
+  - [c4.md](doc/c4.md) - Apresentação
 
-## Gallery 1
+## Galeria
 
-_Please provide a galery of the final result, with small images_
-A [table](https://www.markdownguide.org/extended-syntax/#tables) may be usefull to organize the images.
+| Página Inicial                | Página de Serviços                    |
+| ----------------------------- | ------------------------------------- |
+| ![Home](screenshots/home.png) | ![Serviços](screenshots/services.png) |
 
-## Technologies
+| Página da Equipa                | Página de Contactos                    |
+| ------------------------------- | -------------------------------------- |
+| ![Equipa](screenshots/team.png) | ![Contactos](screenshots/contacts.png) |
 
-_Indicate the technologies you have used in this assignment. Please provide links for the user to read more about those technologies._
+## Tecnologias
 
-- XML
+- XML/XSD
 - HTML5 + CSS3
 - Javascript
-- nodeJS
 
 ### Frameworks and Libraries
-
-_Did you use any aditional libraries? Describe them here._
 
 - Docker
 - Multipass
@@ -58,7 +74,7 @@ _Please add at least on section (a file) per Chapter. But you can add more._
 
 - Chapter 4: [Presentation](doc/c4.md)
 
-## Team
+## Equipa
 
 - César Ramos [@CésarRamos](https://github.com/devCesarRamos)
 - Gonçalo Cidras [@GonçaloCidras](https://github.com/devCidras)
