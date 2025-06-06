@@ -73,3 +73,21 @@ function mostrarDetalhes(elemento) {
   const detalhes = elemento.querySelector('.detalhes-equipa');
   detalhes.classList.toggle('escondido');
 }
+
+// Menu Mobile
+document
+  .querySelector('.mobile-menu-btn')
+  .addEventListener('click', function () {
+    document.querySelector('nav ul').classList.toggle('show');
+  });
+
+// Animação de scroll suave
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth',
+    });
+  });
+});
