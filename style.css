@@ -436,7 +436,8 @@ tfoot td {
 
 .section-header h2::after {
   content: '';
-  position: absolute;
+  position: relative;
+  display: block;
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
