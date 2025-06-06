@@ -208,6 +208,11 @@ nav ul li.atual a {
   text-align: center;
 }
 
+.intro-servicos p strong {
+  color: var(--cor-primaria);
+  font-weight: 600;
+}
+
 .vantagens-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
