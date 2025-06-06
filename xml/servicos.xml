@@ -1,21 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <servicos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xsi:noNamespaceSchemaLocation="servicos.xsd">
-    <servico>
+          xsi:noNamespaceSchemaLocation="./servicos.xsd">
+    
+    <servico id="individuais">
         <nome>Explicações Individuais</nome>
-        <preco_sessao>25</preco_sessao>
-        <preco_mensal>90</preco_mensal>
         <descricao>Atenção personalizada com professor dedicado para maximizar resultados.</descricao>
+        <modalidades>
+            <modalidade tipo="sessao">
+                <frequencia>1x por semana</frequencia>
+                <duracao>60 min</duracao>
+                <preco>25</preco>
+                <unidade>€/sessão</unidade>
+            </modalidade>
+            <modalidade tipo="pacote">
+                <frequencia>Pacote mensal</frequencia>
+                <sessoes>4</sessoes>
+                <preco>90</preco>
+                <unidade>€/mês</unidade>
+            </modalidade>
+        </modalidades>
+        <beneficios>
+            <beneficio>Todas as disciplinas</beneficio>
+            <beneficio>Horários flexíveis</beneficio>
+            <beneficio>Acompanhamento contínuo</beneficio>
+        </beneficios>
     </servico>
-    <servico>
+    
+    <servico id="grupo">
         <nome>Explicações em Grupo</nome>
-        <preco_sessao>15</preco_sessao>
-        <preco_mensal>60</preco_mensal>
         <descricao>Sessões em pequenos grupos para aprendizagem colaborativa.</descricao>
+        <modalidades>
+            <modalidade tipo="pacote">
+                <frequencia>Pacote mensal</frequencia>
+                <sessoes>4</sessoes>
+                <preco>60</preco>
+                <unidade>€/mês</unidade>
+            </modalidade>
+        </modalidades>
+        <beneficios>
+            <beneficio>Máximo 4 alunos</beneficio>
+            <beneficio>Preços mais acessíveis</beneficio>
+            <beneficio>Dinâmicas interativas</beneficio>
+        </beneficios>
     </servico>
-    <servico>
+    
+    <servico id="exames">
         <nome>Preparação para Exames</nome>
-        <preco_curso>150</preco_curso>
         <descricao>Programas intensivos para exames nacionais e provas de aferição.</descricao>
+        <modalidades>
+            <modalidade tipo="curso">
+                <frequencia>Intensivo</frequencia>
+                <preco>150</preco>
+                <unidade>€/curso</unidade>
+            </modalidade>
+        </modalidades>
+        <beneficios>
+            <beneficio>Simulações de exames</beneficio>
+            <beneficio>Análise de critérios</beneficio>
+            <beneficio>Gestão de tempo</beneficio>
+        </beneficios>
     </servico>
+    
+    <servico id="ferias">
+        <nome>Programas de Férias</nome>
+        <descricao>Revisões e preparação durante interrupções letivas.</descricao>
+        <modalidades>
+            <modalidade tipo="curso">
+                <frequencia>Programa completo</frequencia>
+                <preco>120</preco>
+                <unidade>€/programa</unidade>
+            </modalidade>
+        </modalidades>
+        <beneficios>
+            <beneficio>Recuperação de matérias</beneficio>
+            <beneficio>Preparação para o ano seguinte</beneficio>
+            <beneficio>Atividades lúdico-pedagógicas</beneficio>
+        </beneficios>
+    </servico>
+    
+    <servico id="apoio">
+        <nome>Apoio ao Estudo</nome>
+        <descricao>Acompanhamento diário para realização de trabalhos e estudo.</descricao>
+        <modalidades>
+            <modalidade tipo="pacote">
+                <frequencia>Pacote mensal</frequencia>
+                <sessoes>4</sessoes>
+                <preco>70</preco>
+                <unidade>€/mês</unidade>
+            </modalidade>
+        </modalidades>
+        <beneficios>
+            <beneficio>Organização de estudo</beneficio>
+            <beneficio>Técnicas de memorização</beneficio>
+            <beneficio>Orientação de trabalhos</beneficio>
+        </beneficios>
+    </servico>
+    
+    <servico id="ensino-superior">
+        <nome>Acesso ao Ensino Superior</nome>
+        <descricao>Orientação especializada para candidaturas e exames específicos.</descricao>
+        <modalidades>
+            <modalidade tipo="curso">
+                <frequencia>Programa completo</frequencia>
+                <preco>180</preco>
+                <unidade>€/curso</unidade>
+            </modalidade>
+        </modalidades>
+        <beneficios>
+            <beneficio>Preparação para provas específicas</beneficio>
+            <beneficio>Apoio na candidatura</beneficio>
+            <beneficio>Orientação vocacional</beneficio>
+        </beneficios>
+    </servico>
+    
 </servicos>

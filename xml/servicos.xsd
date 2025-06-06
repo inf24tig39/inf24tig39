@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
     <xs:element name="servicos">
         <xs:complexType>
             <xs:sequence>
@@ -7,14 +8,46 @@
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="nome" type="xs:string"/>
-                            <xs:element name="preco_sessao" type="xs:decimal" minOccurs="0"/>
-                            <xs:element name="preco_mensal" type="xs:decimal" minOccurs="0"/>
-                            <xs:element name="preco_curso" type="xs:decimal" minOccurs="0"/>
                             <xs:element name="descricao" type="xs:string"/>
+                            <xs:element name="modalidades">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="modalidade" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="frequencia" type="xs:string"/>
+                                                    <xs:element name="duracao" type="xs:string" minOccurs="0"/>
+                                                    <xs:element name="sessoes" type="xs:integer" minOccurs="0"/>
+                                                    <xs:element name="preco" type="xs:decimal"/>
+                                                    <xs:element name="unidade" type="xs:string"/>
+                                                </xs:sequence>
+                                                <xs:attribute name="tipo" use="required">
+                                                    <xs:simpleType>
+                                                        <xs:restriction base="xs:string">
+                                                            <xs:enumeration value="sessao"/>
+                                                            <xs:enumeration value="pacote"/>
+                                                            <xs:enumeration value="curso"/>
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                </xs:attribute>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="beneficios">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="beneficio" type="xs:string" maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
                         </xs:sequence>
+                        <xs:attribute name="id" type="xs:ID" use="required"/>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+    
 </xs:schema>

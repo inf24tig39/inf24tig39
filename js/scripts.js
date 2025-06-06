@@ -1,47 +1,87 @@
-// Função para carregar e exibir serviços do XML
-function carregarServicosXML() {
-  fetch('servicos.xml')
+function carregarTabelaPrecos() {
+  fetch('xml/servicos.xml')
     .then((response) => response.text())
     .then((data) => {
       const parser = new DOMParser();
       const xmlDoc = parser.parseFromString(data, 'text/xml');
       const servicos = xmlDoc.getElementsByTagName('servico');
+      const container = document.getElementById('tabela-precos-dinamica');
 
-      let html =
-        '<table id="xml-table"><tr><th>Serviço</th><th>Descrição</th><th>Preço</th></tr>';
+      // Criar estrutura da tabela
+      const table = document.createElement('table');
+      const thead = document.createElement('thead');
+      const tbody = document.createElement('tbody');
 
+      // Cabeçalho
+      const headerRow = document.createElement('tr');
+      ['Serviço', 'Modalidade', 'Duração', 'Preço'].forEach((text) => {
+        const th = document.createElement('th');
+        th.textContent = text;
+        headerRow.appendChild(th);
+      });
+      thead.appendChild(headerRow);
+
+      // Processar serviços
       for (let i = 0; i < servicos.length; i++) {
-        const nome =
-          servicos[i].getElementsByTagName('nome')[0].childNodes[0].nodeValue;
-        const descricao =
-          servicos[i].getElementsByTagName('descricao')[0].childNodes[0]
-            .nodeValue;
-        let preco = '';
+        const servico = servicos[i];
+        const nome = servico.getElementsByTagName('nome')[0].textContent;
+        const modalidades = servico.getElementsByTagName('modalidade');
+        let firstRow = true;
 
-        if (servicos[i].getElementsByTagName('preco_sessao').length > 0) {
-          preco =
-            servicos[i].getElementsByTagName('preco_sessao')[0].childNodes[0]
-              .nodeValue + '€/sessão';
-        } else if (
-          servicos[i].getElementsByTagName('preco_mensal').length > 0
-        ) {
-          preco =
-            servicos[i].getElementsByTagName('preco_mensal')[0].childNodes[0]
-              .nodeValue + '€/mês';
-        } else {
-          preco =
-            servicos[i].getElementsByTagName('preco_curso')[0].childNodes[0]
-              .nodeValue + '€/curso';
+        for (let j = 0; j < modalidades.length; j++) {
+          const modalidade = modalidades[j];
+          const tipo = modalidade.getAttribute('tipo');
+          const frequencia =
+            modalidade.getElementsByTagName('frequencia')[0].textContent;
+          const duracao =
+            modalidade.getElementsByTagName('duracao')[0]?.textContent || '';
+          const sessoes =
+            modalidade.getElementsByTagName('sessoes')[0]?.textContent || '';
+          const preco = modalidade.getElementsByTagName('preco')[0].textContent;
+          const unidade =
+            modalidade.getElementsByTagName('unidade')[0].textContent;
+
+          const row = document.createElement('tr');
+
+          // Nome do serviço (apenas na primeira linha)
+          if (firstRow) {
+            const nomeCell = document.createElement('td');
+            nomeCell.textContent = nome;
+            nomeCell.rowSpan = modalidades.length;
+            row.appendChild(nomeCell);
+            firstRow = false;
+          }
+
+          // Modalidade
+          const modalidadeCell = document.createElement('td');
+          modalidadeCell.textContent = frequencia;
+          row.appendChild(modalidadeCell);
+
+          // Duração/Sessões
+          const duracaoCell = document.createElement('td');
+          duracaoCell.textContent =
+            duracao || (sessoes ? `${sessoes} sessões` : '-');
+          row.appendChild(duracaoCell);
+
+          // Preço
+          const precoCell = document.createElement('td');
+          precoCell.textContent = `${preco}${unidade}`;
+          row.appendChild(precoCell);
+
+          tbody.appendChild(row);
         }
-
-        html += `<tr><td>${nome}</td><td>${descricao}</td><td>${preco}</td></tr>`;
       }
 
-      html += '</table>';
-      document.getElementById('servicos-xml').innerHTML = html;
+      // Montar tabela
+      table.appendChild(thead);
+      table.appendChild(tbody);
+      container.appendChild(table);
     })
-    .catch((error) => console.error('Erro ao carregar XML:', error));
+    .catch((error) => console.error('Erro ao carregar tabela:', error));
 }
+
+// Chamar a função quando a página carregar
+window.addEventListener('DOMContentLoaded', carregarTabelaPrecos);
 
 // Chamar a função quando a página carregar
 window.onload = function () {
