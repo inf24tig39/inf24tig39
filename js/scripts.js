@@ -91,3 +91,25 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
   });
 });
+
+// Destaque no menu de navegação
+document.addEventListener('DOMContentLoaded', function () {
+  // Obter o caminho da URL atual
+  const path = window.location.pathname.split('/').pop();
+
+  // Remover a classe "atual" de todos os itens
+  document.querySelectorAll('nav ul li').forEach((item) => {
+    item.classList.remove('atual');
+  });
+
+  // Adicionar a classe "atual" ao item correspondente
+  if (path === 'index.html' || path === '') {
+    document.querySelector('nav ul li:first-child').classList.add('atual');
+  } else if (path === 'servicos.html') {
+    document.querySelector('nav ul li:nth-child(2)').classList.add('atual');
+  } else if (path === 'equipa.html') {
+    document.querySelector('nav ul li:nth-child(3)').classList.add('atual');
+  } else if (path === 'contactos.html') {
+    document.querySelector('nav ul li:nth-child(4)').classList.add('atual');
+  }
+});
