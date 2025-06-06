@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <servicos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xsi:noNamespaceSchemaLocation="./xml/servicos.xsd">
+          xsi:noNamespaceSchemaLocation="servicos.xsd">
     <servico>
         <nome>Explicações Individuais</nome>
         <preco_sessao>25</preco_sessao>
