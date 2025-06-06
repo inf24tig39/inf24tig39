@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="servicos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="servico" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nome" type="xs:string"/>
+                            <xs:element name="preco_sessao" type="xs:decimal" minOccurs="0"/>
+                            <xs:element name="preco_mensal" type="xs:decimal" minOccurs="0"/>
+                            <xs:element name="preco_curso" type="xs:decimal" minOccurs="0"/>
+                            <xs:element name="descricao" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

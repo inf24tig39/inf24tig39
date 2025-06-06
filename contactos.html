@@ -1,30 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contactos - Estudo360</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div class="container">
-          <h1>Estudo360</h1>
-          <nav>
-            <ul>
-              <li class="atual"><a href="index.html">Início</a></li>
-              <li><a href="servicos.html">Serviços</a></li>
-              <li><a href="equipa.html">Equipa</a></li>
-              <li><a href="contactos.html">Contactos</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      
-      <footer>
-        <p>&copy; 2025 ESTUDO360. Todos os direitos reservados.</p>
-        <p>Rua das Escolas, 123 – Maia | Tel: 912 345 678 | estudo360@email.com</p>
+      <div class="container">
+        <h1>Estudo360</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="equipa.html">Equipa</a></li>
+            <li class="atual"><a href="contactos.html">Contactos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="contactos">
+        <h2>Contacte-nos</h2>
+
+        <article class="contact-info">
+          <h3>Informações de Contacto</h3>
+          <address>
+            <p><strong>Morada:</strong> Rua das Escolas, 123 – Maia</p>
+            <p>
+              <strong>Telefone:</strong>
+              <a href="tel:+351912345678">912 345 678</a>
+            </p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:estudo360@email.com">estudo360@email.com</a>
+            </p>
+          </address>
+
+          <div class="horario">
+            <h4>Horário de Funcionamento</h4>
+            <dl>
+              <dt>Segunda a Sexta:</dt>
+              <dd>09:00 - 20:00</dd>
+              <dt>Sábado:</dt>
+              <dd>10:00 - 14:00</dd>
+            </dl>
+          </div>
+        </article>
+
+        <article class="contact-form">
+          <h3>Envie-nos uma mensagem</h3>
+          <form id="formulario-contacto">
+            <div class="form-group">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="assunto">Assunto:</label>
+              <select id="assunto" name="assunto">
+                <option value="informacoes">Informações</option>
+                <option value="inscricao">Inscrição</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem">Mensagem:</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="botao">Enviar Mensagem</button>
+          </form>
+        </article>
+      </section>
+
+      <section id="mapa">
+        <h3>Localização</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?..."
+          width="100%"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 ESTUDO360. Todos os direitos reservados.</p>
+      <p>
+        Rua das Escolas, 123 – Maia | Tel: 912 345 678 | estudo360@email.com
+      </p>
     </footer>
     <script src="js/scripts.js"></script>
-</body>
+  </body>
 </html>

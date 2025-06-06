@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="servicos.xsd">
+    <servico>
+        <nome>Explicações Individuais</nome>
+        <preco_sessao>25</preco_sessao>
+        <preco_mensal>90</preco_mensal>
+        <descricao>Atenção personalizada com professor dedicado para maximizar resultados.</descricao>
+    </servico>
+    <servico>
+        <nome>Explicações em Grupo</nome>
+        <preco_sessao>15</preco_sessao>
+        <preco_mensal>60</preco_mensal>
+        <descricao>Sessões em pequenos grupos para aprendizagem colaborativa.</descricao>
+    </servico>
+    <servico>
+        <nome>Preparação para Exames</nome>
+        <preco_curso>150</preco_curso>
+        <descricao>Programas intensivos para exames nacionais e provas de aferição.</descricao>
+    </servico>
+</servicos>
