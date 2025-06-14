@@ -1,194 +1,192 @@
 <!DOCTYPE html>
 <html lang="pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contactos - Estudo360</title>
-    <link
-      rel="icon"
-      href="assets/img/logos/logoAzul.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="container header-container">
-        <div class="logo">
-          <i class="fas fa-graduation-cap logo-icon floating"></i>
-          <h1>Estudo360</h1>
-        </div>
-        <button class="mobile-menu-btn">
-          <i class="fas fa-bars"></i>
-        </button>
-        <nav>
-          <ul>
-            <li><a href="index.html">Início</a></li>
-            <li class="atual"><a href="servicos.html">Serviços</a></li>
-            <li><a href="equipa.html">Equipa</a></li>
-            <li><a href="contactos.html">Contactos</a></li>
-          </ul>
-        </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactos - Estudo360</title>
+  <link
+    rel="icon"
+    href="assets/img/logos/logoAzul.png"
+    type="image/x-icon"
+  >
+  <link rel="stylesheet" href="css/style.css">
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  >
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <i class="fas fa-graduation-cap logo-icon floating"></i>
+        <h1>Estudo360</h1>
       </div>
-    </header>
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="equipa.html">Equipa</a></li>
+          <li class="atual"><a href="contactos.html">Contactos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section class="banner-contactos">
-      <div class="container">
-        <h1>Fale Connosco</h1>
-        <p>Estamos aqui para responder a todas as suas questões</p>
-      </div>
+  <section class="banner-contactos">
+    <div class="container">
+      <h2>Fale Connosco</h2>  
+      <p>Estamos aqui para responder a todas as suas questões</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="contactos">
+      <h2 class="visually-hidden">Contactos</h2>
+      <article class="contact-info">
+        <h3>Informações de Contacto</h3>
+        <div class="address-info">
+          <p>
+            <i class="fas fa-map-marker-alt"></i> <strong>Morada:</strong>Rua
+            das Escolas, 123 – Maia
+          </p>
+          <p>
+            <i class="fas fa-phone"></i> <strong>Telefone:</strong>
+            <a href="tel:+351912345678">912 345 678</a>
+          </p>
+          <p>
+            <i class="fas fa-envelope"></i> <strong>Email:</strong>
+            <a href="mailto:estudo360@email.com">estudo360@email.com</a>
+          </p>
+        </div>
+
+        <div class="horario">
+          <h4>Horário de Funcionamento</h4>
+          <dl>
+            <dt>Segunda a Sexta:</dt>
+            <dd>09:00 - 20:00</dd>
+            <dt>Sábado:</dt>
+            <dd>10:00 - 14:00</dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="contact-form">
+        <h3>Envie-nos uma mensagem</h3>
+        <form id="formulario-contacto">
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>  <!-- Removed slash -->
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>  <!-- Removed slash -->
+          </div>
+
+          <div class="form-group">
+            <label for="assunto">Assunto:</label>
+            <select id="assunto" name="assunto">
+              <option value="informacoes">Informações</option>
+              <option value="inscricao">Inscrição</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="botao">Enviar Mensagem</button>
+        </form>
+      </article>
     </section>
 
-    <main class="container">
-      <section id="contactos">
-        <article class="contact-info">
-          <h3>Informações de Contacto</h3>
-          <div class="address-info">
-            <p>
-              <i class="fas fa-map-marker-alt"></i> <strong>Morada:</strong>Rua
-              das Escolas, 123 – Maia
-            </p>
-            <p>
-              <i class="fas fa-phone"></i> <strong>Telefone:</strong>
-              <a href="tel:+351912345678">912 345 678</a>
-            </p>
-            <p>
-              <i class="fas fa-envelope"></i> <strong>Email:</strong>
-              <a href="mailto:estudo360@email.com">estudo360@email.com</a>
-            </p>
-          </div>
+    <section id="mapa">
+      <h3>Localização</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789012!2d-8.61111111111111!3d41.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24612345678901%3A0x1234567890abcdef!2sRua%20das%20Escolas%2C%20123%20%E2%80%93%20Maia!5e0!3m2!1spt-PT!2spt!4v1612345678901!5m2!1spt-PT!2spt"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+  </main>
 
-          <div class="horario">
-            <h4>Horário de Funcionamento</h4>
-            <dl>
-              <dt>Segunda a Sexta:</dt>
-              <dd>09:00 - 20:00</dd>
-              <dt>Sábado:</dt>
-              <dd>10:00 - 14:00</dd>
-            </dl>
-          </div>
-        </article>
-
-        <article class="contact-form">
-          <h3>Envie-nos uma mensagem</h3>
-          <form id="formulario-contacto">
-            <div class="form-group">
-              <label for="nome">Nome:</label>
-              <input type="text" id="nome" name="nome" required />
-            </div>
-
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-
-            <div class="form-group">
-              <label for="assunto">Assunto:</label>
-              <select id="assunto" name="assunto">
-                <option value="informacoes">Informações</option>
-                <option value="inscricao">Inscrição</option>
-                <option value="outro">Outro</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="mensagem">Mensagem:</label>
-              <textarea
-                id="mensagem"
-                name="mensagem"
-                rows="5"
-                required
-              ></textarea>
-            </div>
-
-            <button type="submit" class="botao">Enviar Mensagem</button>
-          </form>
-        </article>
-      </section>
-
-      <section id="mapa">
-        <h3>Localização</h3>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789012!2d-8.61111111111111!3d41.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24612345678901%3A0x1234567890abcdef!2sRua%20das%20Escolas%2C%20123%20%E2%80%93%20Maia!5e0!3m2!1spt-PT!2spt!4v1612345678901!5m2!1spt-PT!2spt"
-          width="100%"
-          height="400"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="footer-container">
-          <div class="footer-col">
-            <h3>Estudo360</h3>
-            <p>
-              O centro de explicações que transforma desafios académicos em
-              histórias de sucesso.
-            </p>
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-          </div>
-
-          <div class="footer-col">
-            <h3>Serviços</h3>
-            <ul>
-              <li><a href="#">Explicações Individuais</a></li>
-              <li><a href="#">Explicações em Grupo</a></li>
-              <li><a href="#">Preparação para Exames</a></li>
-              <li><a href="#">Programas de Férias</a></li>
-              <li><a href="#">Apoio ao Estudo</a></li>
-              <li><a href="#">Acesso ao Ensino Superior</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-col">
-            <h3>Links Rápidos</h3>
-            <ul>
-              <li><a href="index.html">Início</a></li>
-              <li><a href="servicos.html">Serviços</a></li>
-              <li><a href="equipa.html">Equipa</a></li>
-              <li><a href="contactos.html">Contactos</a></li>
-              <li><a href="#">Política de Privacidade</a></li>
-              <li><a href="#">Termos e Condições</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-col">
-            <h3>Contactos</h3>
-            <ul>
-              <li>
-                <i class="fas fa-map-marker-alt"></i> Rua das Escolas, 123 –
-                Maia
-              </li>
-              <li><i class="fas fa-phone"></i> Tel: 912 345 678</li>
-              <li><i class="fas fa-envelope"></i> estudo360@email.com</li>
-              <li><i class="fas fa-clock"></i> Seg-Sex: 9:00 - 20:00</li>
-              <li><i class="fas fa-clock"></i> Sáb: 10:00 - 14:00</li>
-            </ul>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>Estudo360</h3>
+          <p>
+            O centro de explicações que transforma desafios académicos em
+            histórias de sucesso.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
           </div>
         </div>
 
-        <div class="copyright">
-          <p>&copy; 2025 ESTUDO360. Todos os direitos reservados.</p>
+        <div class="footer-col">
+          <h3>Serviços</h3>
+          <ul>
+            <li><a href="#">Explicações Individuais</a></li>
+            <li><a href="#">Explicações em Grupo</a></li>
+            <li><a href="#">Preparação para Exames</a></li>
+            <li><a href="#">Programas de Férias</a></li>
+            <li><a href="#">Apoio ao Estudo</a></li>
+            <li><a href="#">Acesso ao Ensino Superior</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="equipa.html">Equipa</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos e Condições</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contactos</h3>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> Rua das Escolas, 123 –
+              Maia
+            </li>
+            <li><i class="fas fa-phone"></i> Tel: 912 345 678</li>
+            <li><i class="fas fa-envelope"></i> estudo360@email.com</li>
+            <li><i class="fas fa-clock"></i> Seg-Sex: 9:00 - 20:00</li>
+            <li><i class="fas fa-clock"></i> Sáb: 10:00 - 14:00</li>
+          </ul>
         </div>
       </div>
-    </footer>
-    <script src="js/scripts.js"></script>
-  </body>
+
+      <div class="copyright">
+        <p>&copy; 2025 ESTUDO360. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/scripts.js"></script>
+</body>
 </html>
