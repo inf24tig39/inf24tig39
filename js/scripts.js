@@ -143,13 +143,13 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // Adicionar a classe "atual" ao item correspondente
-  if (path === 'index.html' || path === '') {
+  if (path === 'index.html' || path === '' || path === 'index') {
     document.querySelector('nav ul li:first-child').classList.add('atual');
-  } else if (path === 'servicos.html') {
+  } else if (path === 'servicos.html' || path === 'servicos') {
     document.querySelector('nav ul li:nth-child(2)').classList.add('atual');
-  } else if (path === 'equipa.html') {
+  } else if (path === 'equipa.html' || path === 'equipa') {
     document.querySelector('nav ul li:nth-child(3)').classList.add('atual');
-  } else if (path === 'contactos.html') {
+  } else if (path === 'contactos.html' || path === 'contactos') {
     document.querySelector('nav ul li:nth-child(4)').classList.add('atual');
   }
 });
@@ -175,3 +175,13 @@ document.querySelectorAll('.membro-equipa').forEach((membro) => {
     toggleDetalhes(this);
   });
 });
+
+// Validação básica no envio
+document
+  .getElementById('formulario-contacto')
+  .addEventListener('submit', function (e) {
+    if (!this.checkValidity()) {
+      e.preventDefault();
+      // Exibir mensagens de erro
+    }
+  });
