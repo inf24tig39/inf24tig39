@@ -1,6 +1,6 @@
 # inf24tig39
 
-Repositório para alojar o projeto desenvolvido para 'Tecnologias Internet', uma unidade curricular do primeiro ano da Universidade da Maia. Desenvolvido pelo Grupo inf24tig39: [@CésarRamos](https://github.com/devCesarRamos), [@GonçaloCidras](https://github.com/devCidras).
+Repositório para alojar o projeto desenvolvido para 'Tecnologias Internet', uma unidade curricular do primeiro ano da Universidade da Maia. Desenvolvido pelo Grupo inf24tig39: [@César Ramos](https://github.com/devCesarRamos), [@Gonçalo Cidras](https://github.com/devCidras).
 
 ## Descrição do tema
 
