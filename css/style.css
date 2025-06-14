@@ -211,6 +211,10 @@ nav ul li.atual a {
   box-shadow: 0 6px 20px rgba(255, 107, 0, 0.6);
 }
 
+a[href^='http'] {
+  color: var(--cor-destaque);
+}
+
 /* ===== INTRODUÇÃO SERVIÇOS ===== */
 .intro-servicos {
   background-color: var(--cor-branco);
