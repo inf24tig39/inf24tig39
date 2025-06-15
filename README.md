@@ -47,23 +47,21 @@ O projeto consiste num website completo para o **Estudo360**, um centro de expli
 
 ## Report
 
-_Please add at least on section (a file) per Chapter. But you can add more._
-
 ### Project presentation
 
-- Chapter 1: [Project presentation](doc/c1.md)
+- Chapter 1: [Apresentação do Projeto](doc/c1.md)
 
 ### User Interface
 
-- Chapter 2: [User Interface Prototype and Sitemap](doc/c2.md)
+- Chapter 2: [Interface do Utilizador](doc/c2.md)
 
 ### Product
 
-- Chapter 3: [Product](doc/c3.md)
+- Chapter 3: [Produto](doc/c3.md)
 
 ### Presentation
 
-- Chapter 4: [Presentation](doc/c4.md)
+- Chapter 4: [Apresentação](doc/c4.md)
 
 ## Equipa
 
