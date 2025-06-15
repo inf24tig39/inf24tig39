@@ -45,15 +45,6 @@ O projeto consiste num website completo para o **Estudo360**, um centro de expli
 - HTML5 + CSS3
 - Javascript
 
-### Frameworks and Libraries
-
-- Docker
-- Multipass
-- NodeJS
-- JQuery
-- Laravel
-- Bootstrap
-
 ## Report
 
 _Please add at least on section (a file) per Chapter. But you can add more._
