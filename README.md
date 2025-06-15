@@ -49,19 +49,19 @@ O projeto consiste num website completo para o **Estudo360**, um centro de expli
 
 ### Project presentation
 
-- Chapter 1: [Apresentação do Projeto](doc/c1.md)
+- Capítulo 1: [Apresentação do Projeto](doc/c1.md)
 
 ### User Interface
 
-- Chapter 2: [Interface do Utilizador](doc/c2.md)
+- Capítulo 2: [Interface do Utilizador](doc/c2.md)
 
 ### Product
 
-- Chapter 3: [Produto](doc/c3.md)
+- Capítulo 3: [Produto](doc/c3.md)
 
 ### Presentation
 
-- Chapter 4: [Apresentação](doc/c4.md)
+- Capítulo 4: [Apresentação](doc/c4.md)
 
 ## Equipa
 
