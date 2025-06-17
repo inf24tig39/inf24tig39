@@ -43,7 +43,7 @@ O projeto consiste num website completo para o **Estudo360**, um centro de expli
 
 - XML/XSD
 - HTML5 + CSS3
-- Javascript
+- JavaScript
 
 ## Report
 
