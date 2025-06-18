@@ -31,13 +31,13 @@ O projeto consiste num website completo para o **Estudo360**, um centro de expli
 
 ## Galeria
 
-| Página Inicial                | Página de Serviços                    |
-| ----------------------------- | ------------------------------------- |
-| ![Home](screenshots/home.png) | ![Serviços](screenshots/services.png) |
+| Página Inicial                     | Página de Serviços                     |
+| ---------------------------------- | -------------------------------------- |
+| ![Home](./assets/img/homepage.png) | ![Serviços](./assets/img/servicos.png) |
 
-| Página da Equipa                | Página de Contactos                    |
-| ------------------------------- | -------------------------------------- |
-| ![Equipa](screenshots/team.png) | ![Contactos](screenshots/contacts.png) |
+| Página da Equipa                   | Página de Contactos                      |
+| ---------------------------------- | ---------------------------------------- |
+| ![Equipa](./assets/img/equipa.png) | ![Contactos](./assets/img/contactos.png) |
 
 ## Tecnologias
 
