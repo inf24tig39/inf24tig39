@@ -45,6 +45,11 @@ O projeto consiste num website completo para o **Estudo360**, um centro de expli
 - HTML5 + CSS3
 - JavaScript
 
+## Frameworks e Libraries
+
+- Font Awesome
+- Google Fonts
+
 ## Report
 
 ### Project presentation
