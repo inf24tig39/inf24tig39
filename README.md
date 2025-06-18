@@ -31,7 +31,7 @@ O projeto consiste num website completo para o **Estudo360**, um centro de expli
 
 ## Galeria
 
-|  Página   |          Secções          |                               Imagem                               |
+|  Página   |          Exemplo          |                               Imagem                               |
 | :-------: | :-----------------------: | :----------------------------------------------------------------: |
 |   Home    |          Galeria          |         ![header+galeria](./assets/img/Header_Galeria.PNG)         |
 |   Home    |  Testemunhos+Newsletter   | ![testemunhos+newsletter](./assets/img/Testemunhos_Newsletter.PNG) |
